@@ -40,3 +40,21 @@ a {
         }
     }
 }
+
+@keyframes flow {
+    from {
+        transform: translateX(25%);
+    }
+    to {
+        transform: translateX(-25%);
+    }
+}
+
+#animate {
+    overflow: hidden;
+    p {
+        animation: flow 6s linear infinite none;
+        white-space: nowrap;
+    }
+}
+
